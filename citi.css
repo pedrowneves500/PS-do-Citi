@@ -17,7 +17,7 @@
 }
 
 .galeria-imagens img:hover {
-  transform: scale(1.05); /*Aumenta um pouco a imagem ao passar o mouse*/
+  transform: scale(1.05); 
 }
 
 @media (max-width: 768px) {
@@ -192,13 +192,13 @@ li {
 
 .musica-container {
   display: flex;
-  flex-direction: column; /* Organiza os itens em uma coluna vertical */
-  gap: 15px; /* Espaço entre cada item da lista de música */
+  flex-direction: column; 
+  gap: 15px; 
 }
 
 .musica-item {
-  display: flex; /* Coloca a imagem e o texto lado a lado */
-  align-items: center; /* Alinha verticalmente a imagem e o texto no centro */
+  display: flex; 
+  align-items: center; 
   background-color: #2c2c2c;
   padding: 15px;
   border-radius: 8px;
@@ -206,7 +206,7 @@ li {
 }
 
 .musica-item:hover {
-  background-color: #3a3a3a; /* Muda a cor de fundo sutilmente no hover */
+  background-color: #3a3a3a; 
 }
 
 .banda-logo {
@@ -214,7 +214,7 @@ li {
   height: 80px;
   object-fit: cover;
   border-radius: 6px;
-  margin-right: 20px; /* Espaço entre a imagem e o texto */
+  margin-right: 20px; 
 }
 
 .musica-info {
@@ -223,7 +223,7 @@ li {
 }
 
 .musica-info h3 {
-  margin: 0 0 5px 0; /* Remove margem de cima e de baixo, adiciona um pouco abaixo */
+  margin: 0 0 5px 0; 
   font-size: 1.4em;
 }
 
@@ -233,8 +233,8 @@ li {
   font-size: 1em;
 }
 
-/* Estiliza o nome do álbum para dar destaque */
+
 .musica-info strong {
   font-weight: bold;
-  color: #00aaff; /* Usa sua cor de destaque azul */
+  color: #00aaff; 
 }
