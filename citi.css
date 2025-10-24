@@ -1,0 +1,240 @@
+
+.galeria-imagens {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  gap: 10px; 
+  margin-bottom: 20px;
+}
+
+.galeria-imagens img {
+  width: 23%; 
+  height: 120px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  border: 2px solid #333; 
+  transition: transform 0.2s ease-in-out; 
+}
+
+.galeria-imagens img:hover {
+  transform: scale(1.05); /*Aumenta um pouco a imagem ao passar o mouse*/
+}
+
+@media (max-width: 768px) {
+  .galeria-imagens img {
+    width: 48%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-imagens img {
+    width: 100%; 
+    height: auto; 
+  }
+}
+
+body {
+  background-color: #121212; 
+  color: #e0e0e0; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+
+header {
+  text-align: center;
+  padding: 40px 20px; 
+}
+
+.perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #0077cc; 
+  object-fit: cover; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); 
+}
+
+header a {
+  display: block; 
+  margin-top: 20px;
+  color: #00aaff; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease; 
+}
+
+header a:hover {
+  color: #ffffff; 
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 3em; 
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 60px; 
+}
+
+h2 {
+  font-size: 2em;
+  color: #ffffff;
+  border-bottom: 2px solid #0077cc; 
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: #00aaff;
+}
+
+p,
+li {
+  line-height: 1.6; 
+}
+
+.secao {
+  background-color: #1e1e1e; 
+  border-radius: 12px;
+  padding: 30px; 
+  margin-bottom: 40px; 
+  border-left: 4px solid #0077cc; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hobbies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 25px; 
+}
+
+.hobby-card {
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  width: 250px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); 
+}
+
+.hobby-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover; 
+}
+
+.hobby-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.hobby-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.hobby-info p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ccc;
+  margin: 0;
+}
+
+.galeria-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.galeria-imagens img {
+  height: 120px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.galeria-imagens img:hover {
+  transform: scale(1.05); 
+}
+
+.secao ul {
+  list-style: none;
+  padding: 0;
+}
+
+.secao li {
+  background-color: #2c2c2c;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.referencia {
+  margin-top: 25px;
+}
+
+.musica-container {
+  display: flex;
+  flex-direction: column; /* Organiza os itens em uma coluna vertical */
+  gap: 15px; /* Espaço entre cada item da lista de música */
+}
+
+.musica-item {
+  display: flex; /* Coloca a imagem e o texto lado a lado */
+  align-items: center; /* Alinha verticalmente a imagem e o texto no centro */
+  background-color: #2c2c2c;
+  padding: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.musica-item:hover {
+  background-color: #3a3a3a; /* Muda a cor de fundo sutilmente no hover */
+}
+
+.banda-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.musica-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.musica-info h3 {
+  margin: 0 0 5px 0; /* Remove margem de cima e de baixo, adiciona um pouco abaixo */
+  font-size: 1.4em;
+}
+
+.musica-info p {
+  margin: 0;
+  color: #ccc;
+  font-size: 1em;
+}
+
+/* Estiliza o nome do álbum para dar destaque */
+.musica-info strong {
+  font-weight: bold;
+  color: #00aaff; /* Usa sua cor de destaque azul */
+}
